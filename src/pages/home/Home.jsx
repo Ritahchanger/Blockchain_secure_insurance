@@ -16,6 +16,13 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState("createPolicy");
   const [isLoading, setIsLoading] = useState(false);
 
+  useEffect(()=>{
+
+
+    const isAuthenticated = 
+
+  })
+
   useEffect(() => {
     const initWeb3 = async () => {
       try {
