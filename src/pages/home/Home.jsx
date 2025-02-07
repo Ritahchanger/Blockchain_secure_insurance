@@ -9,6 +9,8 @@ import PolicyStatus from "./PolicyStatus";
 
 import Preloader from "./Preloader";
 
+import { useNavigate } from "react-router-dom";
+
 const Home = () => {
   const [web3, setWeb3] = useState(null);
   const [accounts, setAccounts] = useState([]);
@@ -16,12 +18,21 @@ const Home = () => {
   const [activeTab, setActiveTab] = useState("createPolicy");
   const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(()=>{
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    const isAuthenticated = !!sessionStorage.getItem("isAuthenticated");
 
-    const isAuthenticated = 
+    if (!isAuthenticated) {
+      return navigate("/");
+    }
+  }, []);
 
-  })
+  const handleLogout = () => {
+    sessionStorage.clear();
+
+    return navigate("/");
+  };
 
   useEffect(() => {
     const initWeb3 = async () => {
@@ -133,6 +144,12 @@ const Home = () => {
             onClick={() => handleTabChange("policyStatus")}
           >
             Policy Status
+          </button>
+          <button
+            className={` py-2 px-4 rounded-sm hover:bg-orange-300 transition duration-300 bg-blue-500`}
+            onClick={handleLogout}
+          >
+            LOGOUT
           </button>
         </div>
 

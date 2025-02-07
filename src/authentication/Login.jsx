@@ -29,7 +29,6 @@ const Login = () => {
     );
 
     if (foundUser) {
-        
       sessionStorage.setItem("isAuthenticated", true);
 
       toast.success("Login successful!");
