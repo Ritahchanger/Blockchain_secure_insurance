@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Web3 from "web3";
 import InsuranceContract from "../../contracts/Insurance.json";
 
+import "./Home.css"
+
 const App = () => {
   const [web3, setWeb3] = useState(undefined);
   const [accounts, setAccounts] = useState([]);

@@ -7,6 +7,8 @@ import MakeClaim from "./MakeClaim";
 import VerifyClaim from "./VerifyClaim";
 import PolicyStatus from "./PolicyStatus";
 
+import "./Home.css"
+
 import Preloader from "./Preloader";
 
 import { useNavigate } from "react-router-dom";

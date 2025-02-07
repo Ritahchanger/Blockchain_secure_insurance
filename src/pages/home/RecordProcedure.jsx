@@ -28,7 +28,7 @@ const RecordProcedure = ({ contract, accounts }) => {
             placeholder="Procedure Name"
             value={procedureName}
             onChange={(e) => setProcedureName(e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-orange-500"
           />
         </div>
         <div>
@@ -36,7 +36,7 @@ const RecordProcedure = ({ contract, accounts }) => {
             type="datetime-local"
             value={procedureTimestamp}
             onChange={(e) => setProcedureTimestamp(e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-orange-500"
           />
         </div>
         <button

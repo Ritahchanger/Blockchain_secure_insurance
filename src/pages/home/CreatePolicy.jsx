@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Home.css";
 
 const CreatePolicy = ({ contract, accounts }) => {
   const [user, setUser] = useState("");
@@ -41,7 +42,7 @@ const CreatePolicy = ({ contract, accounts }) => {
             placeholder="User"
             value={user}
             onChange={(e) => setUser(e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-orange-500"
           />
         </div>
 
@@ -52,7 +53,7 @@ const CreatePolicy = ({ contract, accounts }) => {
               placeholder="Insurance Company"
               value={insuranceCompany}
               onChange={(e) => setInsuranceCompany(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
           </div>
 
@@ -62,7 +63,7 @@ const CreatePolicy = ({ contract, accounts }) => {
               placeholder="Hospital"
               value={hospital}
               onChange={(e) => setHospital(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
           </div>
         </div>
@@ -74,7 +75,7 @@ const CreatePolicy = ({ contract, accounts }) => {
               type="number"
               value={policyAmount}
               onChange={(e) => setPolicyAmount(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
           </div>
 
@@ -85,7 +86,7 @@ const CreatePolicy = ({ contract, accounts }) => {
               placeholder="Premium"
               value={premium}
               onChange={(e) => setPremium(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
           </div>
         </div>
@@ -97,7 +98,7 @@ const CreatePolicy = ({ contract, accounts }) => {
               type="date"
               value={startDate}
               onChange={(e) => setStartDate(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
           </div>
 
@@ -107,7 +108,7 @@ const CreatePolicy = ({ contract, accounts }) => {
               type="date"
               value={endDate}
               onChange={(e) => setEndDate(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
           </div>
         </div>
